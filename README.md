@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PORTFOLIO - EWAN MARTIN</h3>
@@ -65,7 +65,7 @@ Pas de roadmap pour ce projet, mais toute aide/conseil est le bienvenu.
 ## CONTACTS
 
 Twitter - [@mrt_ewan](https://twitter.com/mrt_ewan) <br />
-Mail - [ewan.martin110@gmail.com]
+Mail - [ewan.martin110@gmail.com] <br />
 Projet: [GitHub - Portfolio](https://github.com/Ewan-Mrt/Portfolio.git)
 
 
@@ -76,7 +76,7 @@ Projet: [GitHub - Portfolio](https://github.com/Ewan-Mrt/Portfolio.git)
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="assets/img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">PORTFOLIO - EWAN MARTIN</h3>
@@ -139,5 +139,5 @@ No roadmap for this project, but any help/advice is welcome.
 ## CONTACT
 
 Twitter - [@mrt_ewan](https://twitter.com/mrt_ewan) <br />
-Mail - [ewan.martin110@gmail.com]
+Mail - [ewan.martin110@gmail.com] <br />
 Project: [GitHub - Tupperware](https://github.com/Ewan-Mrt/Portfolio.git)
