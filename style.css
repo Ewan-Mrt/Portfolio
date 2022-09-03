@@ -1,13 +1,16 @@
 /* BODY */
 body{
     background-color: #151F53;
-    margin-right: 5%;
-    margin-left: 5%;
+    font-family: 'Sarabun', Arial;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 0%;
 }
 
 @font-face {
     font-family: 'Sarabun';
     src: url(assets/fonts/Sarabun-Regular.ttf);
+    src: url(assets/fonts/Sarabun-Bold.ttf);
 }
 
 @font-face {
@@ -15,44 +18,73 @@ body{
     src: url(assets/fonts/Satisfy-Regular.ttf);
 }
 
+*::selection{
+    background-color: #DCFFFF;
+    color: #11194D;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* NAV */
 nav{
    display: flex;
-   justify-content: space-between; 
+   justify-content: space-between;
+   height: 10vh;
 }
 
 nav h1{
     font-family: 'Satisfy', sans-serif;
     color: #F5FFFF;
-    font-size: 1.7em;
+    font-size: 2.2vw;
+    margin: 0;
+    margin-top: 1.4vw;
 }
 
 /* ul */
 nav ul{
     display: flex;
+    margin-top: 1.4vw;
 }
 
 nav ul li{
-    font-family: 'Sarabun', sans-serif;
     list-style-type: none;
     text-transform: uppercase;
-    margin-right: 30px;
+    margin-right: 3vw;
 }
 
 nav ul a{
     color: #F5FFFF;
     text-decoration: none;
+    transform-origin: left;
 }
 
 nav ul a:hover{ 
-    text-decoration: underline;
+    color: #dee6e6;
 }
 
 /* fr */
 
 nav a{
-    font-family: 'Sarabun', sans-serif;
     color: #F5FFFF;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 1.4vw;
+}
+
+/* HEADER */
+header{
+    margin-top: 7vw;
+    height: 90vh;
+}
+
+header H1{
+    font-size: 5vw;
+    line-height: 4vw;
+    font-weight: bold;
+    margin-left: 6vw;
+}
+
+header p{
+    text-align: bottom;
 }
