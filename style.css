@@ -57,7 +57,6 @@ nav ul li{
 nav ul a{
     color: #F5FFFF;
     text-decoration: none;
-    transform-origin: left;
 }
 
 nav ul a:hover{ 
@@ -74,11 +73,14 @@ nav a{
 
 /* HEADER */
 header{
-    margin-top: 7vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
     height: 90vh;
 }
 
 header H1{
+    color: #dcffff;
     font-size: 5vw;
     line-height: 4vw;
     font-weight: bold;
@@ -86,5 +88,9 @@ header H1{
 }
 
 header p{
-    text-align: bottom;
+    color: #F5FFFF;
+    font-size: 1.2vw;
+    position: fixed;
+    bottom: 0;
+    margin-left: 85vw;
 }
