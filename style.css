@@ -63,8 +63,31 @@ nav ul a:hover{
     color: #dee6e6;
 }
 
-/* fr */
+/* Animation Soulignement */
+nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+  }
+   
+  nav ul a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 500ms ease;
+  }
+   
+  nav ul a:hover:after {
+    width: 100%;
+  }
 
+
+/* fr */
 nav a{
     color: #F5FFFF;
     text-decoration: none;
@@ -89,8 +112,17 @@ header H1{
 
 header p{
     color: #F5FFFF;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     position: fixed;
     bottom: 0;
     margin-left: 85vw;
+}
+
+/* Clignote Animation */
+header p{
+    animation: clignote 2.5s linear infinite;
+}
+
+@keyframes clignote{
+    50% {opacity: 0; } 
 }
