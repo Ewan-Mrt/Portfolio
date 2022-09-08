@@ -1,48 +1,70 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html 
+    lang="en"
+    class="is-smooth-scroll-compatible is-loaded is-ready
+    has-scroll-init has-scroll-smooth"
+>
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Portfolio - Ewan MARTIN</title>
 </head>
 <body>
-    <nav>
-        <h1>Portfolio</h1>
-        <ul class="links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Contact Me</a></li>
-        </ul>
-        <a href="indexfr.html">🇫🇷 FR</a>
-    </nav>
-    <header>
-        <div class="wrapper">
-            <div class="appear" id="h1-wrapper">
-                <h1>Ewan Martin</h1>
+    <div data-scroll-container>
+        <nav>
+            <h1>Portfolio</h1>
+            <ul class="links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Project</a></li>
+                <li><a href="">Contact Me</a></li>
+            </ul>
+            <a href="indexfr.html">🇫🇷 FR</a>
+        </nav>
+        <header >
+            <div data-scroll data-scroll-repeat="true" class="wrapper">
+                <div data-scroll class="appear" id="h1-wrapper">
+                    <h1>Ewan Martin</h1>
+                </div>
             </div>
-        </div>
-        <div class="wrapper">
-            <div class="appear" id="H1-2">
-                <h1>Web Developer</h1>
+            <div class="wrapper">
+                <div data-scroll class="appear" id="h1-1">
+                    <h1>Web Developer</h1>
+                </div>
             </div>
-        </div>
-        <div class="wrapper">
-            <div class="appear" id="H1-3">
-                <h1>Junior</h1>
-            </div>
-        </div>
-        <p>⬇​ Scroll ⬇​</p>
-    </header>
+            <div class="wrapper">
+                <div data-scroll class="appear" id="h1-2">
+                    <h1>Junior</h1>
+                </div>
+                <p>⬇​ Scroll ⬇​</p>
+        </header>
 
-    <section class="about">
-        <div class="img1-wrapper">
-            <div class="img img1"></div>
-        </div>
-        <div class="h2-wrapper">
-            <h2>About Me</h2>
-        </div>
-        <p></p>
-    </section>
+        <section class="about">
+            <div class="img1-wrapper">
+                <div class="img img1"></div>
+            </div>
+            <div class="h2-wrapper">
+                <h2>About Me</h2>
+            </div>
+            <p>Bonjour,</br>
+                Je m’appelle Ewan Martin j’ai 14 ans et je suis passionné par le développement informatique</br>
+                depuis mes 11 ans. J’ai découvert le développement informatique</br>
+                par hasard lors du premier confinement du Covid 19. J’ai tout de suite été passionné</br>
+                par cet environnement. Depuis, je n’ai qu’un seul objectif en tête, faire du développement
+                 informatique mon métier.</br>
+                </br>
+                En terme d’études, j’aimerais être accepté au LP2I pour faire un BAC STI2D</br>
+                puis des études en informatique plus poussées.</br>
+                Pour toutes demandes de dossier scolaire je vous prie de me contacter via</br>
+                l’espace prévu afin de prendre contact avec mon établissement scolaire.</br>
+                </br>
+                </br>
+                Je vous propose dans découvrir plus sur mon parcours en continuant à visiter ce site…</p>
+        </section>
+    </div>
+
+    <!-- LIB -->
+    <script src="./assets/lib/locomotive-scroll.min.js"></script>
+    <script src="./assets/js/index.js "></script>
 </body>
 </html>
