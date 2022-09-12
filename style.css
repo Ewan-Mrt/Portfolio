@@ -112,6 +112,10 @@ header H1{
     margin-left: 6vw;
 }
 
+header img{
+    width: 25vw;
+}
+
 header p{
     color: #F5FFFF;
     font-size: 1.3vw;
