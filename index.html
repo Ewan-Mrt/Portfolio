@@ -41,9 +41,7 @@
         </header>
 
         <section class="about">
-            <div class="h2-wrapper">
-                <h2>About Me</h2>
-            </div>
+            <h2 class="text-anime-about">About me</h2>
             <p>Hello,<br />
 
                 My name is Ewan Martin and I am 14 years old and have been passionate about<br />
@@ -61,12 +59,59 @@
                 I propose you to discover more about my journey by continuing to visit this site…
         </section>
         <section class="skills">
+            <h2>Skills</h2>
+            <div class="big_box">
+                <div class="box" id="un">
+                    <div class="pourcent">
+                        <svg>
+                            <circle data-scroll cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span>80%</span>
+                    </div>
+                    <h3>Html</h3>
+                </div>
 
+                <div class="box" id="deux">
+                    <div class="pourcent">
+                        <svg>
+                            <circle data-scroll cx="70px" cy="70px" r="70px" id="css"></circle>
+                        </svg>
+                        <span>65%</span>
+                    </div>
+                    <h3>Css</h3>
+                </div>
+
+                <div class="box" id="trois">
+                    <div class="pourcent">
+                        <svg>
+                            <circle data-scroll cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span>20%</span>
+                    </div>
+                    <h3>Js</h3>
+                </div>
+
+                <div class="box" id="quatre">
+                    <div class="pourcent">
+                        <svg>
+                            <circle data-scroll cx="70px" cy="70px" r="70px"></circle>
+                        </svg>
+                        <span>50%</span>
+                    </div>
+                    <h3>Responsive</h3>
+                </div>
+            </div>
         </section>
     </div>
 
     <!-- LIB -->
     <script src="./assets/lib/locomotive-scroll.min.js"></script>
     <script src="./assets/js/index.js "></script>
+
+    <!-- Load the polyfill first. -->
+<script src="path/to/intersection-observer.js"></script>
+
+<!-- Load all other JavaScript. -->
+<script src="assets/js/index.js"></script>
 </body>
 </html>

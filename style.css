@@ -16,6 +16,11 @@ body{
     src: url(assets/fonts/Satisfy-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Grafont';
+    src: url(assets/fonts/ZTGrafton-Regular.ttf);
+}
+
 *::selection{
     background-color: #70d6d6;
     color: #11194D;
@@ -87,7 +92,7 @@ nav ul a {
   }
 
 
-/* fr */
+/* fr - en*/
 nav a{
     color: #F5FFFF;
     text-decoration: none;
@@ -157,6 +162,7 @@ header p{
 
 /* Clignote Animation */
 header p{
+    user-select: none;
     animation: clignote 2.5s linear infinite;
 }
 
@@ -175,14 +181,151 @@ header p{
 
 .about h2{
     font-family: 'Sarabun', sans-serif;
-    font-size: 3.5vw;
+    font-size: 3.5em;
     text-align: center;
     padding-top: 5vw;
 }
 
 .about p{
     font-family: 'Sarabun', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1.2em;
     text-align: center;
     margin-top: 8vw;
+}
+
+/* SECTION - SKILLS */
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.skills h2{
+    font-family: 'Sarabun', sans-serif;
+    color: #DCFFFF;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5vw;
+}
+
+.big_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 8vw;
+}
+
+/* Box */
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    height: 350px;
+}
+
+.box{
+    background-color: #F5FFFF;
+    border-radius: 20%;
+    padding: 1vw;
+}
+
+.pourcent{
+    position: relative;
+}
+
+/* Box 1 */
+#un svg circle{
+    fill: none;
+    stroke: #70d6d6;
+    stroke-width: 8px;
+    transform: translate(55px ,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circle-1 2s forwards;
+    stroke-linecap: round;
+}
+
+@keyframes circle-1{
+    to{
+        stroke-dashoffset: 88;
+    }
+}
+
+/* Box 2 */
+#deux svg circle{
+    fill: none;
+    stroke: #70d6d6;
+    stroke-width: 8px;
+    transform: translate(55px ,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circle-2 2s forwards;
+    stroke-linecap: round;
+}
+
+@keyframes circle-2{
+    to{
+        stroke-dashoffset: 154;
+    }
+}
+
+/* Box 3 */
+#trois svg circle{
+    fill: none;
+    stroke: #70d6d6;
+    stroke-width: 8px;
+    transform: translate(55px ,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circle-3 2s forwards;
+    stroke-linecap: round;
+}
+
+@keyframes circle-3{
+    to{
+        stroke-dashoffset: 352;
+    }
+}
+
+/* Box 4 */
+#quatre svg circle{
+    fill: none;
+    stroke: #70d6d6;
+    stroke-width: 8px;
+    transform: translate(55px ,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: circle-4 2s forwards;
+    stroke-linecap: round;
+}
+
+@keyframes circle-4{
+    to{
+        stroke-dashoffset: 220;
+    }
+}
+
+.box span{
+    font-family: monospace;
+    color: #787e80;
+    font-size: 2vw;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box h3{
+    font-family: 'Grafont', Arial, sans-serif;
+    color: #3f3d3d;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
 }
