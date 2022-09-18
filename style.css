@@ -170,6 +170,17 @@ header p{
     50% {opacity: 0; } 
 }
 
+/* ALL SECTION */
+
+section{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.hidden{
+    opacity: 0;
+}
+
 /* SECTION - ABOUT ME */
 
 .about{
@@ -216,7 +227,7 @@ header p{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    margin-top: 8vw;
+    margin-top: 5vw;
 }
 
 /* Box */
@@ -232,6 +243,7 @@ header p{
     background-color: #F5FFFF;
     border-radius: 20%;
     padding: 1vw;
+    margin-bottom: 20px;
 }
 
 .pourcent{
@@ -239,7 +251,7 @@ header p{
 }
 
 /* Box 1 */
-#un svg circle{
+.big_box #un svg circle{
     fill: none;
     stroke: #70d6d6;
     stroke-width: 8px;
@@ -319,6 +331,7 @@ header p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    user-select: none;
 }
 
 .box h3{
@@ -328,4 +341,19 @@ header p{
     text-transform: uppercase;
     text-align: center;
     margin-top: 50px;
+}
+
+/* SECTION - PROJECT */
+
+.project{
+    background-color: #DCFFFF;
+    color: #11194D;
+    height: 100vh;
+}
+
+.project h2{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 5vw;
 }
