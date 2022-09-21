@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html 
-    lang="en"
-    class="is-smooth-scroll-compatible is-loaded is-ready
-    has-scroll-init has-scroll-smooth"
->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Portfolio - Ewan MARTIN</title>
 </head>
 <body>
-    <div data-scroll-container>
+    <span data-scroll-container>
+
         <nav>
             <h1>Portfolio</h1>
             <ul class="links">
@@ -22,7 +19,8 @@
             <a href="indexfr.html">🇫🇷 FR</a>
         
         </nav>
-        <header >
+    
+        <header>
         <div>
             <div data-scroll data-scroll-repeat="true" class="wrapper">
                 <div data-scroll class="appear" id="h1-wrapper">
@@ -106,10 +104,19 @@
         </section>
 
         <section class="project">
-            <h2>Project</h2>
-        </section>
-    </div>
+            <h2>Projects</h2>
+            <div class="gallery">
+                <div class="box_project">
+                    <img src="assets/img/Web sites/Tupperware.png" alt="Web site fictious.">
+                    <h3>Tupperware</h3>
+                    <p>Fictitious Web Site</p>
+                </div>
+                <div class="box_project">
 
+                </div>
+            </div>
+        </section>
+    </span>
     <!-- LIB -->
     <script src="./assets/lib/locomotive-scroll.min.js"></script>
     <script src="./assets/js/index.js "></script>

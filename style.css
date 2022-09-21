@@ -5,6 +5,8 @@ body{
     margin-top: 0%;
 }
 
+/* Fonts */
+
 @font-face {
     font-family: 'Sarabun';
     src: url(assets/fonts/Sarabun-Regular.ttf);
@@ -20,6 +22,8 @@ body{
     font-family: 'Grafont';
     src: url(assets/fonts/ZTGrafton-Regular.ttf);
 }
+
+/* Personalization */
 
 *::selection{
     background-color: #70d6d6;
@@ -70,20 +74,20 @@ nav ul a:hover{
 
 /* Animation Soulignement */
 nav ul a {
-    position: relative;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    position: relative;
     padding: 10px 0;
   }
    
   nav ul a:after {
-    content: '';
+    background: white;
     position: absolute;
-    left: 0;
-    bottom: 0;
+    content: '';
     width: 0;
     height: 2px;
-    background: white;
+    left: 0;
+    bottom: 0;
     transition: width 500ms ease;
   }
    
@@ -199,7 +203,7 @@ section{
 
 .about p{
     font-family: 'Sarabun', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.2vw;
     text-align: center;
     margin-top: 8vw;
 }
@@ -241,9 +245,9 @@ section{
 
 .box{
     background-color: #F5FFFF;
+    margin-bottom: 20px;
     border-radius: 20%;
     padding: 1vw;
-    margin-bottom: 20px;
 }
 
 .pourcent{
@@ -251,22 +255,18 @@ section{
 }
 
 /* Box 1 */
-.big_box #un svg circle{
+#un svg circle{
     fill: none;
     stroke: #70d6d6;
     stroke-width: 8px;
     transform: translate(55px ,5px);
     stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dashoffset: 88;
     animation: circle-1 2s forwards;
     stroke-linecap: round;
 }
 
-@keyframes circle-1{
-    to{
-        stroke-dashoffset: 88;
-    }
-}
+
 
 /* Box 2 */
 #deux svg circle{
@@ -275,16 +275,11 @@ section{
     stroke-width: 8px;
     transform: translate(55px ,5px);
     stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dashoffset: 154;
     animation: circle-2 2s forwards;
     stroke-linecap: round;
 }
 
-@keyframes circle-2{
-    to{
-        stroke-dashoffset: 154;
-    }
-}
 
 /* Box 3 */
 #trois svg circle{
@@ -293,15 +288,9 @@ section{
     stroke-width: 8px;
     transform: translate(55px ,5px);
     stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dashoffset: 352;
     animation: circle-3 2s forwards;
     stroke-linecap: round;
-}
-
-@keyframes circle-3{
-    to{
-        stroke-dashoffset: 352;
-    }
 }
 
 /* Box 4 */
@@ -311,20 +300,13 @@ section{
     stroke-width: 8px;
     transform: translate(55px ,5px);
     stroke-dasharray: 440;
-    stroke-dashoffset: 440;
-    animation: circle-4 2s forwards;
+    stroke-dashoffset: 220;
     stroke-linecap: round;
-}
-
-@keyframes circle-4{
-    to{
-        stroke-dashoffset: 220;
-    }
 }
 
 .box span{
     font-family: monospace;
-    color: #787e80;
+    color: #a5aaac;
     font-size: 2vw;
     font-weight: bold;
     position: absolute;
@@ -338,8 +320,8 @@ section{
     font-family: 'Grafont', Arial, sans-serif;
     color: #3f3d3d;
     font-size: 1.5em;
-    text-transform: uppercase;
     text-align: center;
+    text-transform: uppercase;
     margin-top: 50px;
 }
 
@@ -356,4 +338,58 @@ section{
     font-size: 3.5em;
     text-align: center;
     padding-top: 5vw;
+}
+
+/* Gallery */
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5vw;
+}
+
+.box_project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    height: 350px;
+}
+
+.box_project{
+    background-color: #11194D;
+    color: #F5FFFF;
+    border-radius: 20%;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.box_project img{
+    align-items: center;
+    border-radius: 10%;
+    width: 450px;
+    height: 250px;
+}
+
+.box_project h3{
+    font-family: 'Grafont';
+    font-size: 1.7em;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.box_project p{
+    font-family: 'Sarabun', arial, sans-serif;
+    font-size: 1.1em;
+    color: #a5aaac;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.box_project:hover{
+
 }

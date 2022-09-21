@@ -12,11 +12,11 @@ const scroll = new LocomotiveScroll({
 
 let observer = new IntersectionObserver(observables => {
     for(let observable of observables){
-        if(observable.intersectionRatio > 0.5)
+        if(observable.intersectionRatio > 0.2)
             observable.target.classList.remove("hidden");
     }
 }, {
-   threshold: 0.5 
+   threshold: 0.2 
 });
 
 const sections = document.querySelectorAll("section")
