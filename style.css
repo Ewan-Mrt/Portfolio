@@ -358,8 +358,9 @@ section{
 }
 
 .box_project{
-    background-color: #11194D;
+    background-color: #151F5E;
     color: #F5FFFF;
+    position: relative;
     border-radius: 20%;
     padding-top: 1.5vw;
     padding-left: 1vw;
@@ -368,7 +369,7 @@ section{
 
 .box_project img{
     align-items: center;
-    border-radius: 10%;
+    border-radius: 15%;
     width: 450px;
     height: 250px;
 }
@@ -390,6 +391,203 @@ section{
     margin-top: 5px;
 }
 
-.box_project:hover{
+/* Recouvrement */
 
+.recouvrement{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: #151F5E;
+}
+
+.recouvrement:hover{
+    opacity: 1;
+}
+
+.recouvrement h3{
+    font-family: 'Grafont';
+    font-size: 1.7em;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.recouvremnt p{
+    font-family: 'Sarabun', arial, sans-serif;
+    font-size: 1.1em;
+    color: #a5aaac;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* Ul */
+
+.box_project ul{
+    font-family: 'Grafont', 'Sarabun', arial, sans-serif;
+    font-size: 0.8vw;
+    margin-top: 50px;
+}
+
+.box_project ul li{
+    margin-bottom: 25px;
+}
+
+a{
+    color: #70d6d6;
+}
+
+.recouvrement .logo_github{
+    width: 1.3vw;
+    height: 1.3vw;
+    opacity: 1;
+}
+
+.box_project ul li span{
+    text-decoration: underline;
+}
+
+/* CONTACT ME */
+
+/* Header */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: #dcffff;
+    width: 60vw;
+    height: 42vw;
+    border-radius: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+form h3{
+    font-family: 'Sarabun', sans-serif;
+    color: #11194d;
+    font-size: 3.5em;
+    text-align: center;
+    padding-top: 0.5vw;
+    margin-bottom: 0;
+}
+
+form .separation{
+    background-color: #a5aaac;
+    width: 80%;
+    height: 3px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+/* Corp du form */
+
+form .corp_formulaire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+form .boite{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1.5vw;
+    margin-bottom: 15px;
+}
+
+form .corp_formulaire .boite .title .label{
+    color: #11194d;
+}
+
+/* Gauche */
+
+form .corp_formulaire .gauche .boite{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+form .corp_formulaire .gauche .boite input{
+    height: 5vh;
+    width: 20vw;
+    border-radius: 10px;
+    padding-left: 50px;
+    border: 1px solid #a5aaac;
+    font-size: 0.7em;
+    margin-top: 20px;
+}
+
+form .corp_formulaire .gauche .boite i{
+    margin-top: 5px;
+    margin-right: 15px;
+    margin-left: 5px;
+    color: #11194d;
+}
+
+form .corp_formulaire .gauche .boite .title{
+    display: flex;
+}
+
+/* Droit */
+
+form .corp_formulaire .droit .boite{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+form .corp_formulaire .droit .boite textarea{
+    height: 80%;
+    width: 18vw;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #a5aaac;
+    resize: none;
+}
+
+form .corp_formulaire .droit .boite textarea{
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+/* Pied du form */
+
+form .pied_formulaire{
+    margin-top: 3vw;
+}
+
+form .pied_formulaire button{
+    font-family: 'Sarabun', sans-serif;
+    font-size: 1vw;
+    text-transform: uppercase ;
+    width: 200px;
+    height: 40px;
+}
+
+form .pied_formulaire button{
+    background-color: #11194d;
+    color: #dcffff;
+    border-radius: 10px;
+    border: none;
+}
+
+form .pied_formulaire button:hover{
+    background-color: #151F5E;
 }
