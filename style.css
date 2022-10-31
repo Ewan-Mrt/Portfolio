@@ -651,3 +651,8 @@ footer section{
     color: #11194D;
     text-decoration: underline 2px;
 }
+
+#Contact p a:hover{
+    color: #70d6d6;
+    text-decoration: underline 2px;
+}
