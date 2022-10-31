@@ -3,10 +3,10 @@ body{
     background-color: #151F5E;
     font-family: 'Sarabun', Arial;
     margin-top: 0%;
+    overflow-x: hidden;
 }
 
 /* Fonts */
-
 @font-face {
     font-family: 'Sarabun';
     src: url(assets/fonts/Sarabun-Regular.ttf);
@@ -24,7 +24,6 @@ body{
 }
 
 /* Personalization */
-
 *::selection{
     background-color: #70d6d6;
     color: #11194D;
@@ -133,7 +132,6 @@ header p{
 }
 
 /* Apparition H1 */
-
 #h1-wrapper{
     transition-delay: 0.3s;
 }
@@ -341,7 +339,6 @@ section{
 }
 
 /* Gallery */
-
 .gallery{
     display: flex;
     flex-direction: row;
@@ -392,7 +389,6 @@ section{
 }
 
 /* Recouvrement */
-
 .recouvrement{
     position: absolute;
     top: 0;
@@ -429,7 +425,6 @@ section{
 }
 
 /* Ul */
-
 .box_project ul{
     font-family: 'Grafont', 'Sarabun', arial, sans-serif;
     font-size: 0.8vw;
@@ -457,7 +452,6 @@ a{
 /* CONTACT ME */
 
 /* Header */
-
 .contact{
     display: flex;
     justify-content: center;
@@ -498,7 +492,6 @@ form .separation{
 }
 
 /* Corp du form */
-
 form .corp_formulaire{
     display: flex;
     flex-direction: row;
@@ -516,7 +509,6 @@ form .corp_formulaire .boite .title .label{
 }
 
 /* Gauche */
-
 form .corp_formulaire .gauche .boite{
     display: flex;
     flex-direction: column;
@@ -545,7 +537,6 @@ form .corp_formulaire .gauche .boite .title{
 }
 
 /* Droit */
-
 form .corp_formulaire .droit .boite{
     display: flex;
     flex-direction: column;
@@ -568,7 +559,6 @@ form .corp_formulaire .droit .boite textarea{
 }
 
 /* Pied du form */
-
 form .pied_formulaire{
     margin-top: 3vw;
 }
@@ -590,4 +580,74 @@ form .pied_formulaire button{
 
 form .pied_formulaire button:hover{
     background-color: #151F5E;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #DCFFFF;
+    color: #11194D;
+    height: 50vh;
+}
+
+
+/* Footer > Header */
+footer header{
+    height: 10vh;
+}
+
+footer header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2vw;
+}
+
+#middle{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer header ul li a i{
+    color: #151F5E;
+}
+
+/* Footer > Section */
+footer section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 6vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+#Me h4{
+    font-family: 'Sarabun';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline 5px;
+    
+}
+
+#Me p{
+    font-size: 1em;
+}
+
+#Contact{
+    text-align: right;
+}
+
+#Contact h4{
+    font-family: 'Sarabun';
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-decoration: underline 5px;
+    
+}
+
+#Contact p a{
+    color: #11194D;
+    text-decoration: underline 2px;
 }
